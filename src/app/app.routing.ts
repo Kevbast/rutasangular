@@ -5,11 +5,14 @@ import { MusicaComponent } from "./components/musica.component/musica.component"
 import { Routes,RouterModule } from "@angular/router";
 import { ModuleWithProviders } from "@angular/core";
 import { NotfoundComponent } from "./components/notfound.component/notfound.component";
+import { NumerodobleComponent } from "./components/numerodoble.component/numerodoble.component";
 //NECESITAMOS UN ARRAY CON RUTAS,DICHO ARRAY SERÁ DE TIPO ROUTES
 const appRoutes:Routes=[
     {path:"",component:HomeComponent},
     {path:"cine",component:CineComponent},
     {path:"musica",component:MusicaComponent},
+    {path:"doble",component:NumerodobleComponent},
+    
     {path:"**",component:NotfoundComponent},
 ]
 //DESDE ESTA CLASE DEBEMOS EXPORTAR EL ARRAY DE ROUTES COMO PROVIDER

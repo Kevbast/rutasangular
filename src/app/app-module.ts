@@ -8,6 +8,7 @@ import { MusicaComponent } from './components/musica.component/musica.component'
 import { appRoutingProvider, routing } from './app.routing';
 import { MenuComponent } from './components/menu.component/menu.component';
 import { NotfoundComponent } from './components/notfound.component/notfound.component';
+import { NumerodobleComponent } from './components/numerodoble.component/numerodoble.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NotfoundComponent } from './components/notfound.component/notfound.comp
     CineComponent,
     MusicaComponent,
     MenuComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    NumerodobleComponent
   ],
   imports: [
     BrowserModule,routing
