@@ -12,6 +12,7 @@ const appRoutes:Routes=[
     {path:"cine",component:CineComponent},
     {path:"musica",component:MusicaComponent},
     {path:"doble",component:NumerodobleComponent},
+    {path:"doble/:numero",component:NumerodobleComponent},
     
     {path:"**",component:NotfoundComponent},
 ]
