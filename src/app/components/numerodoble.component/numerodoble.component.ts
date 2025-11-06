@@ -1,5 +1,5 @@
 import { Component ,OnInit} from '@angular/core';
-import { ActivatedRoute,Params } from '@angular/router';//los necesitamos para recibir parámetro
+import { ActivatedRoute,Params, Router } from '@angular/router';//los necesitamos para recibir parámetro
 @Component({
   selector: 'app-numerodoble.component',
   standalone: false,
@@ -11,7 +11,9 @@ export class NumerodobleComponent implements OnInit{//IMPLEMENTAMOS onInit para 
   public numero!:number;
 
   //EN EL CONSTRUCTOR RECIBIMOS EL OBJETO
-  constructor(private _activeRoute:ActivatedRoute){
+  constructor(private _activeRoute:ActivatedRoute,
+    private _router:Router//PARA EL MÉTODO GOTOHOME
+  ){
     this.doble=0;
   }
 
@@ -31,5 +33,13 @@ export class NumerodobleComponent implements OnInit{//IMPLEMENTAMOS onInit para 
 
   }
   
+  goToHome():void{
+    this._router.navigate(['/']);
+  }
+
+  redirect(num:number):void{
+    this._router.navigate(["/doble",num]);
+  }
+
   
 }

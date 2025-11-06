@@ -1,0 +1,19 @@
+<div>
+    <h1>Tabla de multiplicar</h1>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th >Operacion</th>
+                    <th >Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let number of numeros;let i=index">
+                    <td>{{numrecibido}} x {{i+1}}</td>
+                    <td>{{number}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

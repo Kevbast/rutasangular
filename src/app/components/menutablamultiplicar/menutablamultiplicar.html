@@ -1,0 +1,7 @@
+<div>
+    <ul id="menu" >
+       <li *ngFor="let number of numeros;let i=index">
+        <a [routerLink]="['/tabla',number]">Tabla del {{number}}</a>
+       </li>
+    </ul>
+</div>
